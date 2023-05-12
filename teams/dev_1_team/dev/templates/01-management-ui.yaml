@@ -40,5 +40,7 @@ spec:
         - name: management-ui
           image: calico/star-collect:multiarch
           imagePullPolicy: Always
+          imagePullSecrets:
+            - name: regcred
           ports:
             - containerPort: 9001
