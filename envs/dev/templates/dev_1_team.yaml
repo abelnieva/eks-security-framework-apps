@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev_1_team
+  name: dev1Team
   namespace: {{ .Values.argoNamespace | default "argocd" }}
   labels:
     {{- toYaml .Values.labels | nindent 4 }}
