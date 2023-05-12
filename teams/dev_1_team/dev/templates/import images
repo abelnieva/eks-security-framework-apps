@@ -1,0 +1,8 @@
+aws ecr get-login-password --region us-east-1 --profile tesis | docker login --username AWS --password-stdin 481020473208.dkr.ecr.us-east-1.amazonaws.com
+
+docker tag calico/star-collect:multiarch 481020473208.dkr.ecr.us-east-1.amazonaws.com/calico/star-collect:multiarch
+docker push 481020473208.dkr.ecr.us-east-1.amazonaws.com/calico/star-collect:multiarch
+
+docker pull calico/star-probe:multiarch
+docker tag calico/star-probe:multiarch 481020473208.dkr.ecr.us-east-1.amazonaws.com/calico/star-probe:multiarch
+docker push 481020473208.dkr.ecr.us-east-1.amazonaws.com/calico/star-probe:multiarch

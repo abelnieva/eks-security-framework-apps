@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: management-ui
-          image: calico/star-collect:multiarch
+          image: 481020473208.dkr.ecr.us-east-1.amazonaws.com/calico/star-collect:multiarch
           imagePullPolicy: Always
           ports:
             - containerPort: 9001
